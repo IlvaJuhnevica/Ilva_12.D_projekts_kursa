@@ -36,4 +36,4 @@ while skaits < math.log(lielākais - mazākais + 1, 2):
 if skaits >= math.log(lielākais - mazākais + 1, 2):
 	print("\nPareizā atbilde ir skaitlis  %d" % x)
 print("Paldies par darbu!")	
-print("Jauku tev dienu! ")	
+print("Jauku tev dienu!")	
