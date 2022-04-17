@@ -1,6 +1,6 @@
 import random
 import math
-print(" Kursa darbs: Darbošanās ar skaitļiem-darbības un spēles ar skaitļiem")
+print(" Kursa darbs: Darbošanās ar skaitļiem- dažādas darbības un spēles ar skaitļiem")
 print("Noteiksim, vai skaitlis ir pāra vai nepāra")
 skaitlis = int(input("Ievadi skaitli: "))
 if (skaitlis % 2) == 0:
@@ -13,7 +13,8 @@ while i <= skaitlis:
     summa = summa + i
     i = i+1   
 print("Skaitļu summa līdz ievadītajam skaitlim (ieskaitot) ir", summa) # summa = 1+2+3+...+n
-print("Uzspēlēsim skaitļu minēšanas spēli!")
+
+print("UZSPĒLĒSIM SKAITĻU MINĒŠANAS SPĒLI!")
 mazākais = int(input("Ievadi mazāko iespējamo intervāla vērtību:- "))
 lielākais = int(input("Ievadi lielāko iespējamo intervāla vērību:- "))
 # tiek ģenerēts nejaušs skaitlis starp lielāko un mazāko intervāla vētību
@@ -35,5 +36,26 @@ while skaits < math.log(lielākais - mazākais + 1, 2):
 		print("Tavs izvēlētais skaitlis ir pārāk liels!")
 if skaits >= math.log(lielākais - mazākais + 1, 2):
 	print("\nPareizā atbilde ir skaitlis  %d" % x)
-print("Paldies par darbu!")	
-print("Jauku tev dienu!!!!")	
+
+print("UZSPĒLĒSIM -AKMENS, ŠĶĒRES PAPĪRĪTS- SPĒLI!")
+def play():
+    Darbība = input("Kāda ir tava izvēle? 'a' ir akmens, 'p' ir papīrs, 's' ir šķēres \n")
+    Dators = random.choice(['a', 'p', 's'])
+
+    if Darbība == Dators:
+        return 'Neizšķirts'
+
+    # r > s, s > p, p > r
+    if is_win(Darbība, Dators):
+        return 'Tu uzvarēji!'
+
+    return 'Tu zaudēji!'
+
+def is_win(player, opponent):
+    # return true if player wins
+    # r > s, s > p, p > r
+    if (player == 'a' and opponent == 's') or (player == 's' and opponent == 'p') \
+        or (player == 'p' and opponent == 'a'):
+        return True
+
+print(play())
