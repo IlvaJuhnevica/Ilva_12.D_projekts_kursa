@@ -41,21 +41,29 @@ print("UZSPĒLĒSIM -AKMENS, ŠĶĒRES PAPĪRĪTS- SPĒLI!")
 def play():
     Darbība = input("Kāda ir tava izvēle? 'a' ir akmens, 'p' ir papīrs, 's' ir šķēres \n")
     Dators = random.choice(['a', 'p', 's'])
-
     if Darbība == Dators:
         return 'Neizšķirts'
-
-    # r > s, s > p, p > r
+    # a > s, s > p, p > a
     if is_win(Darbība, Dators):
         return 'Tu uzvarēji!'
 
     return 'Tu zaudēji!'
-
 def is_win(player, opponent):
     # return true if player wins
-    # r > s, s > p, p > r
+    # a > s, s > p, p > a
     if (player == 'a' and opponent == 's') or (player == 's' and opponent == 'p') \
         or (player == 'p' and opponent == 'a'):
         return True
-
 print(play())
+
+def trijsturis(n):
+    a=(2*n)-2
+    for i in range (n, -1, -1):
+        for j in range (a, 0,-1):
+            print(end="")
+        a=a+1
+        for j in range (0, i+1):
+            print("*",end="")
+            print("\r")
+n=int(input("Ievadi līniju skaitu: "))
+trijsturis(n)
