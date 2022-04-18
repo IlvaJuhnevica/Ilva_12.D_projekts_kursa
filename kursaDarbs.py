@@ -64,6 +64,6 @@ def trijsturis(b):
         a=a+1
         for j in range (0, i+1):
             print("* ",end="")
-        print("\n")
+        print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
