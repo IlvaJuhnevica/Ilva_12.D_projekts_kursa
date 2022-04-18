@@ -56,14 +56,14 @@ def is_win(player, opponent):
         return True
 print(play())
 
-def trijsturis(n):
-    a=(2*n)-2
-    for i in range (n, -1, -1):
+def trijsturis(b):
+    a=(2*b)-2
+    for i in range (b, -1, -1):
         for j in range (a, 0,-1):
             print(end="")
         a=a+1
         for j in range (0, i+1):
-            print("*",end="")
-            print("\r")
-n=int(input("Ievadi līniju skaitu: "))
-trijsturis(n)
+            print("* ",end="")
+        print("\n")
+b=int(input("Ievadi līniju skaitu: "))
+trijsturis(b)
