@@ -1,6 +1,6 @@
 import random
 import math
-print(" Kursa darbs: Darbošanās ar skaitļiem- dažādas darbības un spēles ar skaitļiem")
+print(" Kursa darbs: Darbošanās ar skaitļiem un burtiem- dažādas darbības un spēles.")
 print("Noteiksim, vai skaitlis ir pāra vai nepāra")
 skaitlis = int(input("Ievadi skaitli: "))
 if (skaitlis % 2) == 0:
@@ -67,3 +67,11 @@ def trijsturis(b):
         print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
+
+print("NOVĒLĒJUMS")
+v="SEKUNDILAIAPSTĀTOSJAUKANEPDIENATIKSKOP!ŠPAVASARA"
+print(v.lower())
+print(v[7:10])
+print(v[18:23])
+print(v[26:31])
+print(v[38:39])
