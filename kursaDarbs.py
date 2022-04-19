@@ -67,8 +67,7 @@ def trijsturis(b):
         print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
-
-print("NOVĒLĒJUMS")
+print("NOVĒLĒJUMS NO ŠĪ BURTU MIKŠĻA")
 v="SEKUNDILAIAPSTĀTOSJAUKANEPDIENATIKSKOP!ŠPAVASARA"
 print(v.lower())
 print(v[7:10])
