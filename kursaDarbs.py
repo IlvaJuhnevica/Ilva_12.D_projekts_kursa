@@ -1,6 +1,6 @@
 import random
 import math
-print(" Kursa darbs: Darbošanās ar skaitļiem un burtiem- dažādas darbības un spēles.")
+print(" Kursa darbs: Darbošanās ar skaitļiem, vārdiem un burtiem- dažādas darbības un spēles.")
 print("Noteiksim, vai skaitlis ir pāra vai nepāra")
 skaitlis = int(input("Ievadi skaitli: "))
 if (skaitlis % 2) == 0:
@@ -13,7 +13,6 @@ while i <= skaitlis:
     summa = summa + i
     i = i+1   
 print("Skaitļu summa līdz ievadītajam skaitlim (ieskaitot) ir", summa) # summa = 1+2+3+...+n
-
 print("UZSPĒLĒSIM SKAITĻU MINĒŠANAS SPĒLI!")
 mazākais = int(input("Ievadi mazāko iespējamo intervāla vērtību:- "))
 lielākais = int(input("Ievadi lielāko iespējamo intervāla vērību:- "))
@@ -55,6 +54,44 @@ def is_win(player, opponent):
         or (player == 'p' and opponent == 'a'):
         return True
 print(play())
+
+print("VĀRDU MINĒŠANAS SPĒLE! UZMINI VĀRDU< KURŠ IR SAISTĪTS AR PROGRAMMĒŠANU!")
+
+words = ['programming', 'tiger', 'lamp', 'television',
+'laptop', 'water', 'microscope', 'doctor', 'youtube',
+'projects']
+
+random_word = random.choice(words)
+
+print('our random word', random_word)
+
+print('*********** WORD GUESSING GAME ***********')
+
+user_guesses = ''
+chances = 10
+
+while chances > 0:
+    wrong_guesses = 0
+    for character in random_word:
+        if character in user_guesses:
+            print(f"Correct guess: {character}")
+        else:
+            wrong_guesses += 1
+            print('_')
+
+    if wrong_guesses == 0:
+        print("Correct.")
+        print(f"Word : {random_word}")
+        break
+    guess = input('Make a guess: ')
+    user_guesses += guess
+
+    if guess not in random_word:
+        chances -= 1
+        print(f"Wrong. You have {chances} more chances")
+
+        if chances == 0:
+            print('game over')
 
 def trijsturis(b):
     a=(2*b)-2
