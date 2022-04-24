@@ -1,0 +1,1 @@
+Programma veic dažādas darbības un spēles ar skaitļiem, burtiem un cipariem.
