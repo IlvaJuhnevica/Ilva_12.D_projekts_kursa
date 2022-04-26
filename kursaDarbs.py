@@ -14,6 +14,15 @@ while i <= skaitlis:
     summa = summa + i
     i = i+1   
 print("Skaitļu summa līdz ievadītajam skaitlim (ieskaitot) ir", summa) # summa = 1+2+3+...+n
+g="cipari.txt"
+sum=0
+with open(g) as fh:
+    for h in fh:
+        h=h.strip()
+        cip=h.split(",")
+        for d in cip:
+            sum=sum+int(d)
+print(sum)
 print("UZSPĒLĒSIM SKAITĻU MINĒŠANAS SPĒLI!")
 mazākais = int(input("Ievadi mazāko iespējamo intervāla vērtību:- "))
 lielākais = int(input("Ievadi lielāko iespējamo intervāla vērību:- "))
