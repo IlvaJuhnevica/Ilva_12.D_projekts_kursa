@@ -1,5 +1,6 @@
 import random
 import math
+from turtle import*
 print(" Kursa darbs: Darbošanās ar skaitļiem, vārdiem un burtiem- dažādas darbības un spēles.")
 print("Noteiksim, vai skaitlis ir pāra vai nepāra")
 skaitlis = int(input("Ievadi skaitli: "))
@@ -35,7 +36,6 @@ while skaits < math.log(lielākais - mazākais + 1, 2):
 		print("Tavs izvēlētais skaitlis ir pārāk liels!")
 if skaits >= math.log(lielākais - mazākais + 1, 2):
 	print("\nPareizā atbilde ir skaitlis  %d" % x)
-
 print("UZSPĒLĒSIM -AKMENS, ŠĶĒRES PAPĪRĪTS- SPĒLI!")
 def play():
     Darbība = input("Kāda ir tava izvēle? 'a' ir akmens, 'p' ir papīrs, 's' ir šķēres \n")
@@ -56,42 +56,75 @@ def is_win(player, opponent):
 print(play())
 
 print("VĀRDU MINĒŠANAS SPĒLE! UZMINI VĀRDU< KURŠ IR SAISTĪTS AR PROGRAMMĒŠANU!")
+words = ['matemātika', 'dators', 'fails', 'programmēšana',
+		'python', 'lietotājs', 'moduļi', 'masīvs',
+		'elif', 'funkcijas', 'print', 'for']
 
-words = ['programming', 'tiger', 'lamp', 'television',
-'laptop', 'water', 'microscope', 'doctor', 'youtube',
-'projects']
+word = random.choice(words)
 
-random_word = random.choice(words)
+print("Guess the characters")
 
-print('our random word', random_word)
+guesses = ''
 
-print('*********** WORD GUESSING GAME ***********')
+# any number of turns can be used here
+turns = 12
 
-user_guesses = ''
-chances = 10
+while turns > 0:
+	
+	# counts the number of times a user fails
+	failed = 0
+	
+	# all characters from the input
+	# word taking one at a time.
+	for char in word:
+		
+		# comparing that character with
+		# the character in guesses
+		if char in guesses:
+			print(char, end=" ")
+			
+		else:
+			print("_")
+			print(char, end=" ")
+			
+			# for every failure 1 will be
+			# incremented in failure
+			failed += 1
+			
 
-while chances > 0:
-    wrong_guesses = 0
-    for character in random_word:
-        if character in user_guesses:
-            print(f"Correct guess: {character}")
-        else:
-            wrong_guesses += 1
-            print('_')
-
-    if wrong_guesses == 0:
-        print("Correct.")
-        print(f"Word : {random_word}")
-        break
-    guess = input('Make a guess: ')
-    user_guesses += guess
-
-    if guess not in random_word:
-        chances -= 1
-        print(f"Wrong. You have {chances} more chances")
-
-        if chances == 0:
-            print('game over')
+	if failed == 0:
+		# user will win the game if failure is 0
+		# and 'You Win' will be given as output
+		print("You Win")
+		
+		# this print the correct word
+		print("The word is: ", word)
+		break
+	
+	# if user has input the wrong alphabet then
+	# it will ask user to enter another alphabet
+	print()
+	guess = input("guess a character:")
+	
+	# every input character will be stored in guesses
+	guesses += guess
+	
+	# check input with the character in word
+	if guess not in word:
+		
+		turns -= 1
+		
+		# if the character doesn’t match the word
+		# then “Wrong” will be given as output
+		print("Wrong")
+		
+		# this will print the number of
+		# turns left for the user
+		print("You have", + turns, 'more guesses')
+		
+		
+		if turns == 0:
+			print("You Loose")
 
 def trijsturis(b):
     a=(2*b)-2
@@ -111,3 +144,20 @@ print(v[7:10])
 print(v[18:23])
 print(v[26:31])
 print(v[38:39])
+#Noslēpumainākais matemātikas simbols
+bgcolor('black')
+color('cyan')
+speed(15)
+right(45)
+for i in range(150):
+    circle(30)
+    if 7 < i < 62:
+        left(5)
+    if 80 < i < 133:
+        right(5)
+    if i < 80:
+        forward(10)
+    else:
+        forward(5)
+done()
+
