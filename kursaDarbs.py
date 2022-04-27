@@ -2,7 +2,7 @@ import random
 import math
 from turtle import*
 print(" Kursa darbs: Darbošanās ar skaitļiem, vārdiem un burtiem- dažādas darbības un spēles.")
-print("Noteiksim, vai skaitlis ir pāra vai nepāra")
+print("NOTEIKSIM, VAI SKAITLIS IR PĀRA VAI NEPĀRA")
 skaitlis = int(input("Ievadi skaitli: "))
 if (skaitlis % 2) == 0:
    print("{0} ir Pāra skaitlis".format(skaitlis))
@@ -14,15 +14,22 @@ while i <= skaitlis:
     summa = summa + i
     i = i+1   
 print("Skaitļu summa līdz ievadītajam skaitlim (ieskaitot) ir", summa) # summa = 1+2+3+...+n
-g="cipari.txt"
-sum=0
-with open(g) as fh:
-    for h in fh:
-        h=h.strip()
-        cip=h.split(",")
-        for d in cip:
-            sum=sum+int(d)
-print(sum)
+print("NOTEIKSIM, IEVADĪTĀ INTERVĀLA PĀRA UN NEPĀRA SKAITĻUS")
+saraksts=[]
+s=int(input("Ievadi intervāla sākuma vērtību:"))
+b=int(input("Ievadi intervāla beigu vērtību:"))
+for i in range(s,b):
+  saraksts.append(i)
+print("Skaitļu saraksts:", saraksts)
+para=[]
+nepara=[]
+for i in range(len(saraksts)):
+  if(saraksts[i]%2==0):
+    para.append(saraksts[i])
+  else:
+    nepara.append(saraksts[i])
+print("Pāra skaitļu saraksts:", para)
+print("Nepāra skaitļu saraksts:", nepara)
 print("UZSPĒLĒSIM SKAITĻU MINĒŠANAS SPĒLI!")
 mazākais = int(input("Ievadi mazāko iespējamo intervāla vērtību:- "))
 lielākais = int(input("Ievadi lielāko iespējamo intervāla vērību:- "))
@@ -63,9 +70,6 @@ def is_win(player, opponent):
         or (player == 'p' and opponent == 'a'):
         return True
 print(play())
-
-print("VĀRDU MINĒŠANAS SPĒLE! UZMINI VĀRDU< KURŠ IR SAISTĪTS AR PROGRAMMĒŠANU!")
-
 def trijsturis(b):
     a=(2*b)-2
     for i in range (b, -1, -1):
