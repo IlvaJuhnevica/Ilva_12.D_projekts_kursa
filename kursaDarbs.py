@@ -85,9 +85,9 @@ linijas = []
 with open('cipari.txt') as f:
     linijas = f.readlines()
 count = 0
-for line in linijas:
+for liinija in linijas:
     count += 1
-    print(f'line {count}: {line}')    
+    print(f'Līnija {count}: {liinija}')    
 
 print("NOVĒLĒJUMS NO ŠĪ BURTU MIKŠĻA")
 v="SEKUNDILAIAPSTĀTOSJAUKANEPDIENATIKSKOP!ŠPAVASARA"
