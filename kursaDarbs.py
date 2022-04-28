@@ -81,11 +81,11 @@ def trijsturis(b):
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
 print("FAILS IZVADA, KĀDS SKAITLIS IR KATRĀ VIŅA LĪNIJĀ")
-lines = []
+linijas = []
 with open('cipari.txt') as f:
-    lines = f.readlines()
+    linijas = f.readlines()
 count = 0
-for line in lines:
+for line in linijas:
     count += 1
     print(f'line {count}: {line}')    
 
