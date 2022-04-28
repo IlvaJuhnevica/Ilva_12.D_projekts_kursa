@@ -88,7 +88,6 @@ count = 0
 for liinija in linijas:
     count += 1
     print(f'Līnija {count}: {liinija}')
-print("FAILS IERAKSTA")
     lines = ['Skaitli ir interesanti!']
 with open('ierakstit.txt', 'w') as f:
     f.write('\n'.join(lines))
