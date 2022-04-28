@@ -88,6 +88,7 @@ count = 0
 for liinija in linijas:
     count += 1
     print(f'Līnija {count}: {liinija}')
+print("FAILS IERAKSTA")
     lines = ['Skaitli ir interesanti!']
 with open('ierakstit.txt', 'w') as f:
     f.write('\n'.join(lines))
@@ -98,7 +99,7 @@ print(v[7:10])
 print(v[18:23])
 print(v[26:31])
 print(v[38:39])
-#Noslēpumainākais matemātikas simbols
+print("NOSLĒPUMAINĀKAIS MATEMĀTIKAS SIMBOLS")
 bgcolor('black')
 color('cyan')
 speed(15)
