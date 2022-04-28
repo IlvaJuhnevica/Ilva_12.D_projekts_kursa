@@ -87,7 +87,10 @@ with open('cipari.txt') as f:
 count = 0
 for liinija in linijas:
     count += 1
-    print(f'Līnija {count}: {liinija}')    
+    print(f'Līnija {count}: {liinija}')
+lines = ['Readme', 'How to write text files in Python']
+with open('cipari.txt', 'w') as f:
+    f.writelines(lines)
 
 print("NOVĒLĒJUMS NO ŠĪ BURTU MIKŠĻA")
 v="SEKUNDILAIAPSTĀTOSJAUKANEPDIENATIKSKOP!ŠPAVASARA"
