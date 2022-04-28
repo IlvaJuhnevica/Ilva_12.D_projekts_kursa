@@ -61,7 +61,6 @@ def play():
     # a > s, s > p, p > a
     if is_win(Darbība, Dators):
         return 'Tu uzvarēji!'
-
     return 'Tu zaudēji!'
 def is_win(player, opponent):
     # return true if player wins
@@ -81,6 +80,15 @@ def trijsturis(b):
         print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
+
+lines = []
+with open('cipari.txt') as f:
+    lines = f.readlines()
+count = 0
+for line in lines:
+    count += 1
+    print(f'line {count}: {line}')    
+
 print("NOVĒLĒJUMS NO ŠĪ BURTU MIKŠĻA")
 v="SEKUNDILAIAPSTĀTOSJAUKANEPDIENATIKSKOP!ŠPAVASARA"
 print(v.lower())
