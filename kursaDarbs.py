@@ -52,8 +52,7 @@ while skaits < math.log(lielākais - mazākais + 1, 2):
 		print("Tavs izvēlētais skaitlis ir pārāk liels!")
 if skaits >= math.log(lielākais - mazākais + 1, 2):
 	print("\nPareizā atbilde ir skaitlis  %d" % x)
-    # Using above second method to create a
-# 2D array
+print("2D MASĪVA(lista) PIELIETOJUMS")  
 rows, cols = (5, 5)
 arr=[]
 for i in range(rows):
@@ -62,7 +61,6 @@ for i in range(rows):
 		col.append(111)
 	arr.append(col)
 print(arr)
-
 print("UZSPĒLĒSIM -AKMENS, ŠĶĒRES PAPĪRĪTS- SPĒLI!")
 def play():
     Darbība = input("Kāda ir tava izvēle? 'a' ir akmens, 'p' ir papīrs, 's' ir šķēres \n")
