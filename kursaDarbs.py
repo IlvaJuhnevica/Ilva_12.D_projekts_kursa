@@ -72,8 +72,6 @@ def play():
         return 'Tu uzvarēji!'
     return 'Tu zaudēji!'
 def is_win(player, opponent):
-    # return true if player wins
-    # a > s, s > p, p > a
     if (player == 'a' and opponent == 's') or (player == 's' and opponent == 'p') \
         or (player == 'p' and opponent == 'a'):
         return True
@@ -89,7 +87,7 @@ def trijsturis(b):
         print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
-print("FAILS IZVADA, KĀDS SKAITLIS IR KATRĀ VIŅA LĪNIJĀ")
+print("PROGRAMMA IZVADA, KĀDS SKAITLIS IR KATRĀ VIŅA LĪNIJĀ")
 linijas = []
 with open('cipari.txt') as f:
     linijas = f.readlines()
