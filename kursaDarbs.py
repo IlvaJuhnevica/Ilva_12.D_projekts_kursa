@@ -80,7 +80,7 @@ def trijsturis(b):
         print("\r")
 b=int(input("Ievadi līniju skaitu: "))
 trijsturis(b)
-
+print("FAILS IZVADA, KĀDS SKAITLIS IR KATRĀ VIŅA LĪNIJĀ")
 lines = []
 with open('cipari.txt') as f:
     lines = f.readlines()
