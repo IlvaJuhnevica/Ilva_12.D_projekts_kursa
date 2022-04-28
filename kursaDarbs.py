@@ -59,7 +59,7 @@ arr=[]
 for i in range(rows):
 	col = []
 	for j in range(cols):
-		col.append(8)
+		col.append(111)
 	arr.append(col)
 print(arr)
 
