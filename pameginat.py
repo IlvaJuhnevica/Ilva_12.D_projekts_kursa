@@ -1,5 +1,11 @@
-import Moduli
+import krasas
 
 print("Varavīksnes krāsu secība:")
-Moduli.viens()
+krasas.viens()
+krasas.divi()
+krasas.tris()
+krasas.cetri()
+krasas.pieci()
+krasas.sesi()
+krasas.septini()
 print()
