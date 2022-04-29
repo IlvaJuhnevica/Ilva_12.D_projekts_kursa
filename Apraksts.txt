@@ -1,11 +1,12 @@
 Mērķis- Programma veic dažādas darbības un spēles ar skaitļiem, burtiem un cipariem.
 Apraksts un funcionalitāte:
 1) Sākotnēji programma nosaka, vai ievadītais skaitlis ir pāra vai nepāra un aprēķina to skaitļu summu, kas ir līdz šim skaitlim ieskaitot.
-2) Programma pieprasa ievadīt intervālu no kura skaitļiem 1D masīvā tiek ierakstīti intervāla skaitļi, vai tie ir pāra vai nepāra.
-3)Skaitļu minēšanas spēle. Programma pieprasa ievadīt intervālu, kurā tiks minēts skaitlis. Atbilstoši intervāla lielumam, ar logaritma palīdzību tiek aprēķināts minēšanas mēģinājumu skaits. 
-4) 2D masīva lietojums. Skaitlis 111 tiek izvadīts 5 reizes, 5 listos.
-5) Akmens, šķēres, papīrītis spēle. Ir jāievada burts a vai p vai s. Ar datoru tiek spēlēta Akmens,Šķēres, Papīrs spēle.
-6) Ievadot līniju skaitu, tiek izvadīts trijstūris no * simbola. Programma pieprasa ievadīt līniju skaitu, un tiek izvadīts trijstūris no * (zvaigznītēm).
-7) Faila pielietojums. Programma izvada, kāds skaitlis ir katrā līnijā. Skaitļi tiek ņemti no faila. Pēctam citā failā tiek ierakstīts teikums-Skaitli ir interesanti!
-8) Novēlējums no burtu mikšļa. No burtu mikšļa tiek izveidots novēlējums.
-9) Tiek izveidota bezgalības zīmes grafika ciānas krāsā.
+2)Varavīksnes krāsu izvadīšana. Ar izveidotās funkcijas palīdzību, kas ir saglabāts kā modulis tiek izvadīta katra varavīksnes krāsa.
+3) Programma pieprasa ievadīt intervālu no kura skaitļiem 1D masīvā tiek ierakstīti intervāla skaitļi, vai tie ir pāra vai nepāra.
+4) Skaitļu minēšanas spēle. Programma pieprasa ievadīt intervālu, kurā tiks minēts skaitlis. Atbilstoši intervāla lielumam, ar logaritma palīdzību tiek aprēķināts minēšanas mēģinājumu skaits. 
+5) 2D masīva lietojums. Skaitlis 111 tiek izvadīts 5 reizes, 5 listos.
+6) Akmens, šķēres, papīrītis spēle. Ir jāievada burts a vai p vai s. Ar datoru tiek spēlēta Akmens,Šķēres, Papīrs spēle.
+7) Ievadot līniju skaitu, tiek izvadīts trijstūris no * simbola. Programma pieprasa ievadīt līniju skaitu, un tiek izvadīts trijstūris no * (zvaigznītēm).
+8) Faila pielietojums. Programma izvada, kāds skaitlis ir katrā līnijā. Skaitļi tiek ņemti no faila. Pēctam citā failā tiek ierakstīts teikums-Skaitli ir interesanti!
+9) Novēlējums no burtu mikšļa. No burtu mikšļa tiek izveidots novēlējums.
+10) Tiek izveidota bezgalības zīmes grafika ciānas krāsā.
