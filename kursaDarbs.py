@@ -9,8 +9,7 @@ while True:
     try:
         skaitlis = int(input("Ievadi skaitli: "))
         break
-    except: print("Neparezi dati")
-skaitlis = int(input("Ievadi skaitli: "))
+    except: print("Nepareizi dati")
 if (skaitlis % 2) == 0:
    print("{0} ir Pāra skaitlis".format(skaitlis))
 else:
