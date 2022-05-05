@@ -40,7 +40,7 @@ para=[]
 nepara=[]
 for i in range(len(saraksts)):
   if(saraksts[i]%2==0):
-    para.append(saraksts[i])
+    para.append(saraksts[i]) #pievieno elementus
   else:
     nepara.append(saraksts[i])
 print("Pāra skaitļu saraksts:", para)
@@ -83,10 +83,10 @@ def play():
     if Darbība == Dators:
         return 'Neizšķirts'
     # a > s, s > p, p > a
-    if is_win(Darbība, Dators):
+    if is_win(Darbība, Dators): # 
         return 'Tu uzvarēji!'
     return 'Tu zaudēji!'
-def is_win(player, opponent):
+def is_win(player, opponent): 
     if (player == 'a' and opponent == 's') or (player == 's' and opponent == 'p') \
         or (player == 'p' and opponent == 'a'):
         return True
@@ -135,5 +135,5 @@ for i in range(150):
         forward(10)
     else:
         forward(5)
-done()
+done() #Šī funkcija tiek izmantota, lai sāktu notikumu cilpu. Tam nav nepieciešami nekādi argumenti. Tam vajadzētu būt pēdējam paziņojumam grafikas programmā.
 
