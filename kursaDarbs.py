@@ -4,6 +4,12 @@ import krasas
 from turtle import*
 print(" Kursa darbs: Darbošanās ar skaitļiem, vārdiem un burtiem- dažādas darbības un spēles.")
 print("NOTEIKSIM, VAI SKAITLIS IR PĀRA VAI NEPĀRA")
+
+while True:
+    try:
+        skaitlis = int(input("Ievadi skaitli: "))
+        break
+    except: print("Neparezi dati")
 skaitlis = int(input("Ievadi skaitli: "))
 if (skaitlis % 2) == 0:
    print("{0} ir Pāra skaitlis".format(skaitlis))
